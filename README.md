@@ -9,9 +9,9 @@ Implementación del FronEnt en Angular de la gestión básica de dispositivos de
   - NodeJS 12.16.2
   - Angular CLI 9.1.1
 
-## Implementación FrontEnd Python
+## Implementación BackEnd Python
 
-Para detalles del repositorio del FronEnd en Python, vea [Config Lite](https://github.com/jaiderh/configlite.git)
+Para detalles del repositorio del BackEnd en Python, vea [Config Lite](https://github.com/jaiderh/configlite.git)
 
 ## Implementación FrontEnd Angular
 
