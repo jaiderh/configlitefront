@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+body {
+    padding-top: 5rem;
+}
+
+.table th.col-action {
+    max-width: 90px !important;
+    width: 90px !important;
+}
+
+
+.table th.col-datetime {
+    max-width: 180px !important;
+    width: 180px !important;
+}

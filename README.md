@@ -1,27 +1,25 @@
-# ConfigLiteFront
+# Config Lite Front
+Implementación del FronEnt en Angular de la gestión básica de dispositivos de medición de energía y sus entidades básicas Clientes y Puntos de Medida
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
+## Configuración de Entorno de Desarrollo
+- Sistema operativo Windows 10 Enterprise
+- Editor Visual Studio Code 1.47.1
+- Librerías
+  - NPM 6.14.4
+  - NodeJS 12.16.2
+  - Angular CLI 9.1.1
 
-## Development server
+## Implementación FrontEnd Python
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para detalles del repositorio del FronEnd en Python, vea [Config Lite](https://github.com/jaiderh/configlite.git)
 
-## Code scaffolding
+## Implementación FrontEnd Angular
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Gestión Entidad Client ( Cliente )
 
-## Build
+- CRUD para la gestión básica de la entidad Client
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Seguridad
+- Autenticación vía JWT
+- Formulario de Autenticación
+- Inteceptores HTTP para encabezados de autenticación

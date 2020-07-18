@@ -1,0 +1,38 @@
+
+<form class="mx-auto" #clientForm="ngForm" id="form-client" (ngSubmit)="register()">
+
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">{{ title }}</a>
+    <div class="form-inline">
+      <button class="btn btn-outline-danger my-2 my-sm-0" type="button" routerLink="/clients">
+          <i class="fa fa-undo"></i>
+          Cancelar
+      </button>
+        <button class="btn btn-outline-success my-2 my-sm-0"
+                 type="submit"
+                 [disabled]="!clientForm.valid">
+            <i class="fa fa-save"></i>
+            Guardar
+        </button>
+    </div>
+  </nav>
+
+  <br>
+
+  <div class="form-group">
+    <label for="txtidclient">ID Cliente *</label>
+    <input type="text" [disabled]="editing" class="form-control" name="id" id="txtidclient" required placeholder="Id del Cliente" maxlength="50" [(ngModel)]="client.idclient">
+  </div>
+  <div class="form-group">
+    <label for="txtemail">Email *</label>
+    <input type="email" class="form-control" name="email" id="txtemail" required placeholder="Correo electrónico" maxlength="254"  [(ngModel)]="client.email">
+  </div>
+  <div class="form-group">
+    <label for="txtciudad">Ciudad *</label>
+    <input type="text" class="form-control" name="city" id="txtciudad" required placeholder="Ciudad" maxlength="30" [(ngModel)]="client.city">
+  </div>
+  <div class="form-group">
+    <label for="txtdescripcion">Descripción</label>
+    <textarea class="form-control" name="description" id="txtdescripcion" rows="3" maxlength="100" [(ngModel)]="client.description"></textarea>
+  </div>
+</form>

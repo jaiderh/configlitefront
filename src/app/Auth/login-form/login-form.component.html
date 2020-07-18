@@ -1,0 +1,28 @@
+
+<form class="mx-auto" #loginForm="ngForm" id="form-client" (ngSubmit)="login()">
+
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">Iniciar Sesión</a>
+  </nav>
+
+  <br>
+
+  <div class="form-group">
+    <label for="txtidclient">Username *</label>
+    <input type="text" class="form-control" name="username" id="txtusername" required placeholder="nombre de usuario" maxlength="20" [(ngModel)]="user.username">
+  </div>
+  <div class="form-group">
+    <label for="txtemail">Password *</label>
+    <input type="password" class="form-control" name="password" id="txtxpassword" required placeholder="password" maxlength="20"  [(ngModel)]="user.password">
+  </div>
+  <div class="form-group">
+
+    <button class="btn btn-success  btn-block"
+        type="submit"
+        [disabled]="!loginForm.valid">
+        <i class="fa fa-arrow-right"></i>
+        Login
+    </button>
+  </div>
+</form>
+

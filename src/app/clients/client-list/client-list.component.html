@@ -1,0 +1,33 @@
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">Clientes</a>
+    <form class="form-inline">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" routerLink="/clients/0/detail">
+            <i class="fa fa-plus"></i>
+            Agregar
+        </button>
+    </form>
+</nav>
+
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col" class="col-action">#</th>
+        <th scope="col">ID Cliente</th>
+        <th scope="col">Email</th>
+        <th scope="col">Ciudad</th>
+        <th scope="col" class="col-datetime">Fecha de Registro</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let client of clients">
+        <td scope="row" class="col-action">
+            <button type="button" [routerLink]="['/clients', client.id,'detail']" class="btn btn-success btn-sm"><i class="fa fa-edit"></i></button>
+            <button type="button" (click)="deleteClient(client)" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+        </td>
+        <td>{{ client.idclient }}</td>
+        <td>{{ client.email }}</td>
+        <td>{{ client.city }}</td>
+        <td>{{ client.created_on | date:'short' }}</td>
+      </tr>
+    </tbody>
+  </table>
